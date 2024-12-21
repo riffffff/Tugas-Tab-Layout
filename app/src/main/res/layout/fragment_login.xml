@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
+
+    <!-- TextView untuk judul halaman "Login" -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp" />
+    <!-- Menempatkan judul di tengah dan memberi jarak bawah 35dp -->
+
+    <!-- EditText untuk input username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <!-- Menambahkan ikon di sebelah kiri, padding, dan background yang sudah dibentuk khusus -->
+
+    <!-- EditText untuk input password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- LinearLayout untuk bagian Terms and Conditions -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <!-- Checkbox untuk "Remember me" -->
+        <CheckBox
+            android:id="@+id/checkTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remember me"
+            android:textSize="12sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1" />
+        <!-- Menambahkan layout_weight agar elemen ini mengisi ruang di sebelah kiri -->
+
+        <!-- TextView untuk "Forget password?" -->
+        <TextView
+            android:id="@+id/tvTerms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forget password?"
+            android:textColor="@color/blue"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <!-- Tombol Login -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+    <!-- Tombol login dengan background kustom dan warna teks putih -->
+
+    <!-- LinearLayout untuk bagian "Already Have an Account" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Layout horizontal untuk teks "New member?" dan link "Register" -->
+
+        <!-- TextView untuk "New member?" -->
+        <TextView
+            android:id="@+id/tvNewMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't Have Account ? "
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+        <!-- Teks "New member?" dengan warna abu-abu -->
+
+        <!-- TextView untuk "Register" -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Register"
+            android:textColor="@color/blue"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+        <!-- Teks "Register" dengan warna biru dan huruf tebal -->
+
+    </LinearLayout>
+
+</LinearLayout>

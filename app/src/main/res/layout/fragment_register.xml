@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textSize="29sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:layout_gravity="center"
+        android:layout_marginBottom="35dp" />
+    <!-- Menampilkan teks "Register" dengan ukuran besar, tebal, dan di tengah layar -->
+
+    <!-- EditText untuk input username -->
+    <EditText
+        android:id="@+id/etUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <!-- Input username dengan ikon pengguna di sebelah kiri, padding, dan background bulat -->
+
+    <!-- EditText untuk input email -->
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:drawableLeft="@drawable/baseline_email_24"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <!-- Input email dengan ikon email di sebelah kiri, padding, dan tipe input email -->
+
+    <!-- EditText untuk input password -->
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawableRight="@drawable/baseline_visibility_off_24"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPassword"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+    <!-- Input password dengan ikon kunci di sebelah kiri dan ikon visibility di
+    sebelah kanan, padding, dan tipe input password -->
+    <EditText
+        android:id="@+id/etNIM"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIM"
+        android:drawablePadding="8dp"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="text"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <!-- Tombol Register -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:background="@drawable/button_background"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp" />
+    <!-- Tombol Register dengan background khusus dan warna teks putih -->
+
+    <!-- LinearLayout untuk bagian "Already Have an Account?" -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <!-- Layout horizontal untuk teks "Already to Have an Account?" dan link "Log In" -->
+
+        <!-- TextView untuk teks "Already to Have an Account?" -->
+        <TextView
+            android:id="@+id/tvNewMember"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already to Have an Account? "
+            android:textSize="14sp"
+            android:textColor="#666666"/>
+        <!-- Teks "Already to Have an Account?" dengan warna abu-abu -->
+
+        <!-- TextView untuk link "Log In" -->
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log In"
+            android:textSize="14sp"
+            android:textColor="@color/blue"
+            android:textStyle="bold"/>
+        <!-- Teks "Log In" dengan warna biru yang dapat diklik untuk login -->
+    </LinearLayout>
+</LinearLayout>
+

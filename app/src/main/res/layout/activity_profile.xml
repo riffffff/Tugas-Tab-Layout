@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/baseline_person_2_24"
+        android:layout_marginTop="64dp"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="#3A3A3A"
+        android:layout_marginVertical="8dp"/>
+
+    <TextView
+        android:id="@+id/textViewNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NIM"
+        android:textSize="20sp"
+        android:textColor="#3A3A3A"/>
+</LinearLayout>
